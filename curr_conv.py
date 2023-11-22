@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+st.title("Currency Converter")
 img = Image.open("cj.jpg")
 st.sidebar.image(img)
 curr = ["Naira", "Pounds", "Dollars", "Euros", "Yen", "Cedis"]
@@ -25,3 +26,6 @@ amount = convert(num, initial, final)
 
 if st.button("convert"):
     st.write(amount)
+
+st.balloons()
+st.snow()
